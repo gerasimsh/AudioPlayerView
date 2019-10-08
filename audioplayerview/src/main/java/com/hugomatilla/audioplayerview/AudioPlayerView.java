@@ -195,6 +195,7 @@ public class AudioPlayerView extends TextView {
         @Override
         public void onCompletion(MediaPlayer mediaPlayer) {
             setText(playText);
+            clearAnimation();
             sendCallbackAudioFinished();
         }
     };
